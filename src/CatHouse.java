@@ -24,14 +24,27 @@ public class CatHouse
         if (age1 > age2)
         {
             cat1.introduce();
+            cat2.introduce();
         }
         else if (age2 > age1)
         {
             cat2.introduce();
+            cat1.introduce();
         }
-        else if (name1.compareTo(name2) )
+        else if (name2.compareTo(name1) > 0)
         {
-
+            cat1.introduce();
+            cat2.introduce();
+        }
+        else if (name2.compareTo(name1) < 0)
+        {
+            cat2.introduce();
+            cat1.introduce();
+        }
+        else
+        {
+            cat1.introduce();
+            cat2.introduce();
         }
     }
 
